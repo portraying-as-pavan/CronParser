@@ -19,9 +19,9 @@ the times as a space-separated list following it.
 
 <h2>How to Run</h2>
 <p>
-  Build the jar - Use `mvn clean install` to build the jar , jar will be created under target folder with name CronParser-1.0-SNAPSHOT.jar
-  Execute the jar file with requierd Argument  - Example java -jar target/CronParser-1.0-SNAPSHOT.jar "1,6-10 0-23/4 1,6-9 1-6 1-3,6 /usr/find"
-
+  Build the jar - Use `mvn clean install` to build the jar , jar will be created under target folder with name CronParser-1.0-SNAPSHOT.jar </br>
+  Execute the jar file with requierd Argument  - Example java -jar target/CronParser-1.0-SNAPSHOT.jar "1,6-10 0-23/4 1,6-9 1-6 1-3,6 /usr/find" </br>
+  </br>
   voila!, you got it parsed :)
 
 </p>
