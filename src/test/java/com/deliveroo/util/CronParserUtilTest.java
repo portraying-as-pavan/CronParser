@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThrows;
 
 public class CronParserUtilTest {
 
@@ -53,5 +54,11 @@ public class CronParserUtilTest {
         assertNotNull(actual1);
         assertNotNull(actual2);
         assert(actual1.size()== expectedSize && actual2.size()==expectedSize);
+    }
+    @Test
+    public void testInvalidFieldValueException() {
+        String testCronExpression="1-a";
+        int min=0, max=10;
+        assertThrows(InvalidFieldException.class, () -> CronParserUtil.parseNumericalField(testCronExpression,min,max));
     }
 }
